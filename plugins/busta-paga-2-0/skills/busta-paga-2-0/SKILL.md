@@ -132,6 +132,7 @@ Da qui ricavi:
   - Assegno di inclusione: Esclusione sociale n.c.a.
   - Altro: Protezione sociale n.c.a. + Abitazione + Ricerca e sviluppo
 - **Interessi sul debito** = "Operazioni sul debito pubblico" (dentro Servizi generali).
+- **Quota stipendi di Sanità e Istruzione**: non è nelle dashboard. Prendila da Eurostat (stessa fonte), aprendo nel browser `https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_exp?geo=IT&unit=MIO_EUR&sector=S13&cofog99=GF07&cofog99=GF09&na_item=D1&na_item=TE&time=<anno>` e leggendo il JSON: D1 = redditi da lavoro dipendente (stipendi + contributi a carico dello Stato), TE = spesa totale (deve coincidere con i quadrati). GF07 = Sanità, GF09 = Istruzione. Per il 2024: Sanità 44,6 su 146,1 mld (30%), Istruzione 63,3 su 89,2 mld (71%).
 - **Altro** = Uscite totali − (Pensioni + Assistenza + Sanità + Istruzione + Difesa + Interessi). Per il dettaglio elenca le sottovoci di Servizi generali (senza debito), Affari economici, Ordine pubblico, Ambiente, Cultura e Casa, con nomi brevi e comprensibili:
 
   | Sottovoce sul sito | Nome da usare |
@@ -231,7 +232,7 @@ Formatta gli importi all'italiana (`1.234,56 €`), con uno spazio non separabil
 - **Sottotitolo**: "Lo Stato incassa **<ENTRATE_TOT>** e spende **<USCITE_TOT>**" (verde e arancione). Sotto, in piccolo: anno, "entrate = tasse e contributi sociali · uscite = spesa pubblica totale".
 - **Grafico a quadrati** (treemap, stile mappa delle azioni), 184 × 96 mm. Ogni quadrato ha nome, percentuale sulle uscite e miliardi. La disposizione è fissa:
   - **colonna sinistra**: **Pensioni** sopra (sottotitolo "vecchiaia e reversibilità") e **Assistenza** sotto. In Assistenza il titolo sta a sinistra e l'elenco a destra (Malattia e disabilità, Figli (assegno unico), NASpI e cassa integraz., Assegno di inclusione, Altro), con i miliardi;
-  - **colonna centrale**: Sanità, Istruzione e, sotto, Interessi sul debito e Difesa affiancati;
+  - **colonna centrale**: Sanità, Istruzione e, sotto, Interessi sul debito e Difesa affiancati. In Sanità e Istruzione, accanto ai miliardi, scrivi la quota stipendi: "146,1 mld · 30% in stipendi";
   - **colonna destra**: **Altro**, a tutta altezza, sempre ultimo a destra, con l'elenco delle sottovoci (sezione 5a).
   - Colori: Pensioni #5B8DEF, Assistenza #3FB8C9, Sanità #2BB673, Istruzione #E5B800, Interessi #e0563b, Difesa #6b7385, Altro #A66BE8.
   - **Prima lo spazio, poi le proporzioni**: ogni quadrato deve avere lo spazio minimo per non tagliare le etichette e tenerle lontane dai bordi (padding di circa 3 mm). Solo dopo dividi il resto in proporzione ai miliardi. Usa `split()` da `codice.md`, con minimi di partenza: colonne 60/60/52 mm, altezze Pensioni/Assistenza 34/34 mm, Sanità/Istruzione/riga bassa 26/24/28 mm, Interessi/Difesa 33/25 mm. Se qualcosa resta tagliato, alza il minimo e rigenera.
@@ -241,7 +242,7 @@ Formatta gli importi all'italiana (`1.234,56 €`), con uno spazio non separabil
 - **Grafico a barre** (SVG), una barra per fascia con altezza proporzionale ai miliardi.
   - Asse X con il solo inizio del range e il simbolo dell'euro: "Fino a 499€ lordi" (la prima fascia parte da 0), poi "Da 500€ lordi", "Da 1000€ lordi" … "Da 3000€ lordi".
   - Sopra ogni barra: "**Costo: 56 mld**" / "per 2,7M di" / "pensionati".
-- **Fonti** in fondo: le due dashboard di Nazareno Lecis (Eurostat gov_10a_exp e gov_10a_taxag, MEF, INPS Open Data, Appendici statistiche, Rendiconti). Spiega che gli interessi sono la voce "Operazioni sul debito pubblico" e indica gli anni dei dati.
+- **Fonti** in fondo: le due dashboard di Nazareno Lecis (Eurostat gov_10a_exp e gov_10a_taxag, MEF, INPS Open Data, Appendici statistiche, Rendiconti). Spiega che gli interessi sono la voce "Operazioni sul debito pubblico", che la quota stipendi di Sanità e Istruzione viene da Eurostat gov_10a_exp (redditi da lavoro dipendente) e indica gli anni dei dati.
 
 ## 9. Pagina 4: "Consigli sul tuo netto"
 
