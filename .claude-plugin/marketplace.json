@@ -10,7 +10,7 @@
     {
       "name": "busta-paga-2-0",
       "source": "./plugins/busta-paga-2-0",
-      "description": "Busta paga 2.0: ricrea una busta paga italiana in un PDF leggibile e di design, partendo dal costo aziendale, con una pagina a torta per bambini."
+      "description": "Busta paga 2.0: ricrea una busta paga italiana in un PDF di 4 pagine leggibile e di design, dal costo aziendale fino a dove vanno tasse e contributi e ai consigli sul netto."
     }
   ],
   "renames": {
