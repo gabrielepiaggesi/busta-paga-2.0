@@ -95,7 +95,7 @@ Centrata, tutta su una pagina:
 - Introduzione: "A <mese>, per avere <Nome> al lavoro, la sua azienda ha speso **<costo>**. Immagina che siano una grande torta: ecco come viene divisa!"
 - **Torta SVG** (circa 80 mm), disegnata con path calcolati in Python e bordi bianchi spessi. Mostra le percentuali in bianco dentro le fette; per le fette sotto l'8% usa un carattere più piccolo e sposta l'etichetta verso l'esterno. Le fette, che devono sommare al costo aziendale:
   - 🟢 **In tasca a <Nome>** = netto (#2BB673) – "Arrivano sul conto: per casa, spesa, vacanze e giochi!"
-  - 🔵 **Pensioni di oggi** = contributi del dipendente + INPS azienda + INAIL + fondo (#5B8DEF) – "Pagano la pensione ai nonni di oggi, più un'assicurazione se <Nome> si fa male al lavoro." Sotto, in piccolo e in grigio: "L'INPS li segna a nome di <Nome>: serviranno a calcolare la sua pensione futura."
+  - 🔵 **Ai pensionati di oggi** = contributi del dipendente + INPS azienda + INAIL + fondo (#5B8DEF) – "Pagano la pensione ai nonni di oggi, più un'assicurazione se <Nome> si fa male al lavoro." Sotto, in piccolo e in grigio: "L'INPS li segna a nome di <Nome>: serviranno a calcolare la sua pensione futura."
   - Non presentare mai i contributi come un salvadanaio o come soldi messi da parte per la pensione del dipendente: il sistema INPS è a ripartizione.
   - 🟠 **Tasse allo Stato** = IRPEF + addizionali (#FF8A3D) – "Pagano scuole, ospedali, strade e parchi per tutti."
   - 🟣 **Premio di fine lavoro** = TFR (#A66BE8) – "Il TFR: soldi che <Nome> riceverà tutti insieme quando cambierà lavoro."
