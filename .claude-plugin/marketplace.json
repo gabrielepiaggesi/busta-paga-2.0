@@ -1,12 +1,19 @@
 {
   "name": "gabriele-marketplace",
-  "owner": { "name": "Gabriele Piaggesi" },
-  "metadata": { "description": "Plugin personali di Gabriele Piaggesi" },
+  "owner": {
+    "name": "Gabriele Piaggesi"
+  },
+  "metadata": {
+    "description": "Plugin personali di Gabriele Piaggesi"
+  },
   "plugins": [
     {
-      "name": "busta-paga-leggibile",
-      "source": "./plugins/busta-paga-leggibile",
+      "name": "busta-paga-2-0",
+      "source": "./plugins/busta-paga-2-0",
       "description": "Busta paga 2.0: ricrea una busta paga italiana in un PDF leggibile e di design, partendo dal costo aziendale, con una pagina a torta per bambini."
     }
-  ]
+  ],
+  "renames": {
+    "busta-paga-leggibile": "busta-paga-2-0"
+  }
 }
