@@ -5,11 +5,11 @@ description: Ricrea una busta paga italiana (PDF) in un PDF più leggibile e di 
 
 # Busta paga 2.0
 
-Prendi una busta paga italiana (Zucchetti, TeamSystem, Inaz, ecc.) e produci un PDF A4 di **2 pagine**:
+Prendi una busta paga italiana (Zucchetti, TeamSystem, Inaz, ecc.) e produci **due PDF** A4 di **2 pagine** ciascuno (uno completo e uno condivisibile, vedi sezione 8):
 1. **Pagina 1** – la busta paga riorganizzata, leggibile, che parte dal costo aziendale.
 2. **Pagina 2** – un grafico a torta spiegato in modo che lo capisca un bambino di 8 anni.
 
-Rispondi sempre in italiano. Il file finale si chiama `Busta_paga_<Mese>_<Anno>_leggibile.pdf` e va consegnato all'utente.
+Rispondi sempre in italiano. I file finali si chiamano `Busta_paga_<Mese>_<Anno>_leggibile.pdf` (completo) e `Busta_paga_<Mese>_<Anno>_condivisibile.pdf` (importi oscurati) e vanno consegnati entrambi all'utente.
 
 ## 0. Chiedi all'utente (prima di tutto, sempre)
 
@@ -131,6 +131,17 @@ Centrata, tutta su una pagina:
 - `pdfinfo` → deve risultare esattamente 2 pagine. Se sono di più, riduci gli spazi o il carattere (testo non sotto ~8,5pt) o la torta. Non togliere dati.
 - Renderizza le pagine con `pdftoppm -r 70 -png` e guardale. Controlla che nulla vada a capo dove non deve (rettangoli, riga informazioni), che nulla esca dai margini e che le etichette della torta si leggano.
 - Invia il PDF all'utente con una breve spiegazione: il netto rispetto al costo aziendale e come hai stimato oneri e scatto. Proponi di sostituire le stime con i dati reali dell'ufficio del personale.
+
+## 8. Versione condivisibile (privacy)
+
+Genera sempre anche una seconda copia identica, `Busta_paga_<Mese>_<Anno>_condivisibile.pdf`, in cui **ogni importo in euro** è coperto da un rettangolino nero, così la busta paga si può mostrare ad altri senza rivelare quanto si guadagna.
+
+- Parti dallo stesso HTML della versione completa e, solo nel corpo della pagina, sostituisci ogni importo con uno `<span class="red">` che contiene degli zeri della stessa lunghezza (es. `0000000`), con CSS `display:inline-block; white-space:nowrap; background:#111; color:#111; border-radius:2px; padding:0 2px`.
+- Le cifre vere devono essere **sostituite**, non solo coperte: nel PDF non deve restare il testo originale degli importi.
+- Una regex adatta per trovare gli importi: `[+−-]?\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?(?:\u00a0|\s)?€`. Copre anche gli importi nella nota IRPEF, nei riquadri "Da inizio anno & TFR", nella stima dello scatto e nella pagina del bambino.
+- Lascia visibili tutto il resto: voci, percentuali (anche quelle della torta), giorni, ore, ferie e permessi.
+- Controlla con `pdftotext` che nella versione condivisibile non resti nessun numero seguito da € e che anche questa sia di esattamente 2 pagine.
+- Nella risposta all'utente ricorda che nome, azienda e dati anagrafici restano visibili, e offri di oscurarli se vuole condividerla in modo anonimo.
 
 ## Note
 
