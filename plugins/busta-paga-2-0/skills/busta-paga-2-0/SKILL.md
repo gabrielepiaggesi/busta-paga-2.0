@@ -237,7 +237,7 @@ Formatta gli importi all'italiana (`1.234,56 €`), con uno spazio non separabil
   - **Prima lo spazio, poi le proporzioni**: ogni quadrato deve avere lo spazio minimo per non tagliare le etichette e tenerle lontane dai bordi (padding di circa 3 mm). Solo dopo dividi il resto in proporzione ai miliardi. Usa `split()` da `codice.md`, con minimi di partenza: colonne 60/60/52 mm, altezze Pensioni/Assistenza 34/34 mm, Sanità/Istruzione/riga bassa 26/24/28 mm, Interessi/Difesa 33/25 mm. Se qualcosa resta tagliato, alza il minimo e rigenera.
 - **Titolo delle pensioni** su due righe: "L'INPS incassa dai contributi **<CONTRIB_INPS>** / ma deve pagare **<SPESA_INPS>** di pensioni + **<Assistenza>** di assistenza".
 - Sotto, su una riga: "Il buco di bilancio di circa **<TRASF_INPS>** è coperto dallo Stato, che trasferisce all'INPS circa il **<TRASF_INPS/IRPEF_TOT %>** delle tue tasse IRPEF."
-- Poi, in piccolo: "Anno <anno> · pensionati divisi per pensione mensile lorda (un pensionato può avere più pensioni, qui sommate)".
+- Poi, in piccolo: "Anno <anno> · <N>M di pensioni per <P>M di pensionati (un pensionato può avere più pensioni, qui sommate)". N = riquadro "PENSIONI INPS" (prestazioni vigenti, 2025: 21.257.999), P = pensionati INPS dal riquadro "PENSIONATI COMPLESSIVI … Di cui INPS" (2025: 15.794.919), arrotondati ai milioni.
 - **Grafico a barre** (SVG), una barra per fascia con altezza proporzionale ai miliardi.
   - Asse X con il solo inizio del range e il simbolo dell'euro: "Fino a 499€ lordi" (la prima fascia parte da 0), poi "Da 500€ lordi", "Da 1000€ lordi" … "Da 3000€ lordi".
   - Sopra ogni barra: "**Costo: 56 mld**" / "per 2,7M di" / "pensionati".
