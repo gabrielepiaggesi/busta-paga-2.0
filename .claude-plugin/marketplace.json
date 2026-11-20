@@ -6,7 +6,7 @@
     {
       "name": "busta-paga-leggibile",
       "source": "./plugins/busta-paga-leggibile",
-      "description": "Ricrea una busta paga italiana in un PDF leggibile e di design, partendo dal costo aziendale, con una pagina a torta per bambini."
+      "description": "Busta paga 2.0: ricrea una busta paga italiana in un PDF leggibile e di design, partendo dal costo aziendale, con una pagina a torta per bambini."
     }
   ]
 }
