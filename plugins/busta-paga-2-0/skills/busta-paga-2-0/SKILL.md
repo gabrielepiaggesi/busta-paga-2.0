@@ -98,12 +98,13 @@ Dall'alto in basso:
    5. Netto in busta (cifra verde) – "XX% del costo azienda"
    - Niente legende o quadratini colorati sotto i rettangoli.
    - Subito sotto i rettangoli, una riga: "Il tuo reddito complessivo è maggiore di quello dell'**X%** dei lavoratori dipendenti italiani · fonte stipendee.it" (la percentuale in verde e in grassetto, la fonte in grigio piccolo; niente dato regionale). Ometti la riga se non hai i dati di stipendee.it.
-4. **Paragrafi**, ben distanziati (~27px tra uno e l'altro). Ogni titolo ha l'importo allineato a destra:
-   - **Costo aziendale** → totale costo; sotto le righe con il segno meno: "Contributi pensioni INPS" e "Assicurazione INAIL". Nessuna nota sotto.
-   - **TFR maturato nel mese (accantonato)** → "− importo", come paragrafo a sé senza tabella.
-   - **Cosa hai guadagnato** → lordo in verde; righe: voce | riferimento (gg/ore) in grigio | importo.
-   - **Cosa viene trattenuto** → "− totale" in arancione; righe raggruppate (contributi, IRPEF, addizionali, altro), con il subtotale nella riga del gruppo su fondo grigio chiaro. Nel gruppo dei contributi, la voce IVS si chiama semplicemente "Contributo pensioni INPS" (senza codice né percentuale). Non scrivere su questa pagina che i contributi pagano le pensioni di oggi: quella spiegazione sta solo nella pagina 2. Sotto, una nota piccola con il calcolo dell'IRPEF (lorda − detrazioni = ritenuta) e l'imponibile IRPEF.
-5. **Due riquadri affiancati**, con un po' più di spazio sopra (~36px):
+4. **Paragrafi**, ben distanziati (~19–22px tra uno e l'altro, quanto basta per stare su una pagina). Ogni titolo ha l'importo allineato a destra. In quest'ordine:
+   - **Lordo aziendale** → costo aziendale del mese. Solo il titolo con l'importo, senza righe sotto.
+   - **Trattenute aziendali** → "− oneri a carico dell'azienda" in arancione; righe con il segno meno: "Contributi pensioni INPS", "Assicurazione INAIL", "TFR maturato nel mese (accantonato)". Nessuna nota sotto.
+   - **Lordo mensile** → lordo del mese in verde; righe: voce | riferimento (gg/ore) in grigio | importo (stipendio del mese, festività, ratei 13ª/14ª, ecc.).
+   - **Trattenute personali** → "− totale trattenute" in arancione; righe raggruppate (contributi previdenziali, IRPEF, addizionali, altro), con il subtotale nella riga del gruppo su fondo grigio chiaro. Nel gruppo dei contributi, la voce IVS si chiama semplicemente "Contributo pensioni INPS" (senza codice né percentuale). Non scrivere su questa pagina che i contributi pagano le pensioni di oggi: quella spiegazione sta solo nella pagina 2. Sotto, una nota piccola con il calcolo dell'IRPEF (lorda − detrazioni = ritenuta), l'imponibile IRPEF e l'eventuale arrotondamento del mese.
+   - **Netto personale** → netto in busta in verde. Solo il titolo con l'importo, senza righe sotto.
+5. **Due riquadri affiancati**, con un po' più di spazio sopra (~22–26px):
    - **Ferie e permessi**: tabella con colonne Residuo | Maturato | Goduto | Saldo (saldo in grassetto).
    - **Da inizio anno & TFR**: imponibili INPS/INAIL e IRPEF, IRPEF pagata, TFR al 31/12, quota TFR dell'anno · rivalutazione.
 6. **Piè di pagina** piccolo: "Versione riformattata per leggibilità della busta paga del <data> (n. …). Fa fede il documento originale." più le posizioni INPS/INAIL.
