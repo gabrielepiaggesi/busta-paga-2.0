@@ -1,0 +1,16 @@
+{
+  "name": "busta-paga-2-0",
+  "displayName": "Busta paga 2.0",
+  "version": "2.0.0",
+  "description": "Ricrea una busta paga italiana (PDF) in un PDF più leggibile e di design, partendo dal costo aziendale, con una pagina a torta spiegata per un bambino di 8 anni.",
+  "author": {
+    "name": "Gabriele Piaggesi"
+  },
+  "keywords": [
+    "busta paga",
+    "cedolino",
+    "stipendio",
+    "pdf",
+    "italia"
+  ]
+}
