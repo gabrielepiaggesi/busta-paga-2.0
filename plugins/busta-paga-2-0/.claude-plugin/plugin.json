@@ -1,7 +1,7 @@
 {
   "name": "busta-paga-2-0",
   "displayName": "Busta paga 2.0",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Ricrea una busta paga italiana (PDF) in un PDF di 4 pagine leggibile e di design: busta paga dal costo aziendale con inflazione, torta per un bambino di 8 anni, dove vanno tasse e INPS, consigli sul netto. Crea anche una versione condivisibile con gli importi oscurati.",
   "author": {
     "name": "Gabriele Piaggesi"
