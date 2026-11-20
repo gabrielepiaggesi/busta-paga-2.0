@@ -66,7 +66,7 @@ Da stipendee.it leggi **solo due dati**: il **costo aziendale annuo** e la **per
 - **Oneri a carico dell'azienda** = costo aziendale del mese − lordo. Scomponili usando i dati della busta paga:
   - **TFR maturato nel mese** = retribuzione utile TFR / 13,5;
   - **Assicurazione INAIL** = imponibile INAIL × tasso della voce tariffa (0,4% se è lavoro d'ufficio o non è indicato);
-  - **Contributi INPS e altri oneri a carico azienda** = ciò che resta. Mostra anche la percentuale sull'imponibile INPS.
+  - **Contributi pensioni INPS** (a carico azienda) = ciò che resta.
 - Arrotonda al centesimo e verifica che le parti tornino al totale. Nella risposta all'utente riporta anche il costo aziendale annuo trovato su stipendee.it.
 
 **Se non c'è un browser** o il sito non funziona: costo aziendale = lordo × **1,40** (circa il 40% in più della RAL), oppure il rapporto costo/RAL indicato dall'utente, e scomponi come sopra. In questo caso non mostrare la classifica dei redditi e dichiaralo nella risposta.
@@ -99,10 +99,10 @@ Dall'alto in basso:
    - Niente legende o quadratini colorati sotto i rettangoli.
    - Subito sotto i rettangoli, una riga: "Il tuo reddito complessivo è maggiore di quello dell'**X%** dei lavoratori dipendenti italiani · fonte stipendee.it" (la percentuale in verde e in grassetto, la fonte in grigio piccolo; niente dato regionale). Ometti la riga se non hai i dati di stipendee.it.
 4. **Paragrafi**, ben distanziati (~27px tra uno e l'altro). Ogni titolo ha l'importo allineato a destra:
-   - **Costo aziendale** → totale costo; sotto le righe con il segno meno: "Contributi INPS e altri oneri a carico azienda (XX,X%)" e "Assicurazione INAIL". Nessuna nota sulla stima, ma sotto le righe aggiungi in piccolo e in grigio: "I contributi INPS (tuoi e dell'azienda) non vengono messi da parte per te: pagano le pensioni di chi è in pensione oggi. Vengono però registrati a tuo nome e servono a calcolare la tua pensione futura."
+   - **Costo aziendale** → totale costo; sotto le righe con il segno meno: "Contributi pensioni INPS" e "Assicurazione INAIL". Nessuna nota sotto.
    - **TFR maturato nel mese (accantonato)** → "− importo", come paragrafo a sé senza tabella.
    - **Cosa hai guadagnato** → lordo in verde; righe: voce | riferimento (gg/ore) in grigio | importo.
-   - **Cosa viene trattenuto** → "− totale" in arancione; righe raggruppate (contributi, IRPEF, addizionali, altro), con il subtotale nella riga del gruppo su fondo grigio chiaro. Nella riga del gruppo dei contributi aggiungi, in grigio e non in grassetto: "· pagano le pensioni di chi è in pensione oggi". Sotto, una nota piccola con il calcolo dell'IRPEF (lorda − detrazioni = ritenuta) e l'imponibile IRPEF.
+   - **Cosa viene trattenuto** → "− totale" in arancione; righe raggruppate (contributi, IRPEF, addizionali, altro), con il subtotale nella riga del gruppo su fondo grigio chiaro. Nel gruppo dei contributi, la voce IVS si chiama semplicemente "Contributo pensioni INPS" (senza codice né percentuale). Non scrivere su questa pagina che i contributi pagano le pensioni di oggi: quella spiegazione sta solo nella pagina 2. Sotto, una nota piccola con il calcolo dell'IRPEF (lorda − detrazioni = ritenuta) e l'imponibile IRPEF.
 5. **Due riquadri affiancati**, con un po' più di spazio sopra (~36px):
    - **Ferie e permessi**: tabella con colonne Residuo | Maturato | Goduto | Saldo (saldo in grassetto).
    - **Da inizio anno & TFR**: imponibili INPS/INAIL e IRPEF, IRPEF pagata, TFR al 31/12, quota TFR dell'anno · rivalutazione.
@@ -117,7 +117,7 @@ Centrata, tutta su una pagina:
 - Introduzione, una sola frase: "A <mese>, per avere <Nome> al lavoro, la sua azienda ha speso **<costo>**." (niente frase sulla "grande torta").
 - **Torta SVG** (circa 85–90 mm), disegnata con path calcolati in Python e bordi bianchi spessi. Mostra le percentuali in bianco dentro le fette; per le fette sotto l'8% usa un carattere più piccolo e sposta l'etichetta verso l'esterno; sotto il 4% non scrivere l'etichetta nella torta (la percentuale resta nella scheda). Le fette, che devono sommare al costo aziendale:
   - 🟢 **In tasca a <Nome>** = netto (#2BB673) – "Arrivano sul conto: per casa, spesa, vacanze e giochi!"
-  - 🔵 **Ai pensionati di oggi** = contributi INPS del dipendente (IVS + CIGS) + INPS azienda (#5B8DEF) – "Pagano la pensione ai nonni di oggi." Sotto, in piccolo e in grigio: "L'INPS li segna a nome di <Nome>: serviranno a calcolare la sua pensione futura."
+  - 🔵 **Ai pensionati di oggi** = contributi INPS del dipendente (IVS + CIGS) + INPS azienda (#5B8DEF) – "Pagano la pensione ai nonni di oggi." Sotto, in piccolo e in grigio: "L'INPS li segna a tuo nome: serviranno a calcolare la tua pensione futura."
   - Non presentare mai i contributi come un salvadanaio o come soldi messi da parte per la pensione del dipendente: il sistema INPS è a ripartizione.
   - 🟠 **Tasse allo Stato** = IRPEF + addizionali (#FF8A3D) – "Pagano scuole, ospedali, strade e parchi per tutti."
   - 🟡 **Assicurazione** = assicurazione INAIL + quota del dipendente al fondo sanitario (es. EST) (#E5B800) – "Protegge <Nome> se si fa male al lavoro o se deve curarsi."
