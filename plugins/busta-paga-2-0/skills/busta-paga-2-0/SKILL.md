@@ -220,7 +220,7 @@ Formatta gli importi all'italiana (`1.234,56 €`), con uno spazio non separabil
 - **Torta SVG** di circa 88 mm. Le fette devono sommare al costo aziendale:
   - 🟢 **In tasca a <Nome>** = netto (#2BB673). Testo: "Arrivano sul conto: per casa, spesa, vacanze e giochi!"
   - 🔵 **Ai pensionati di oggi** = contributi INPS del dipendente + INPS a carico dell'azienda (#5B8DEF). Testo: "Pagano la pensione ai nonni di oggi." In piccolo: "L'INPS li segna a tuo nome: serviranno a calcolare la tua pensione futura."
-  - 🟠 **Tasse allo Stato** = IRPEF + addizionali (#FF8A3D). Accanto all'importo, in piccolo: "(circa **Q** € per aiutare l'INPS)", dove Q = IRPEF del mese × `TRASF_INPS / IRPEF_TOT`. Le addizionali sono escluse perché vanno a Regione e Comune. Testo: "Per stipendi statali, scuole, ospedali, strade e tanto altro."
+  - 🟠 **Tasse allo Stato** = IRPEF + addizionali (#FF8A3D). Accanto all'importo, in piccolo: "(circa **Q** € per aiutare l'INPS)", dove Q = IRPEF del mese × `TRASF_INPS / IRPEF_TOT`. Le addizionali sono escluse perché vanno a Regione e Comune. Testo: "Per aiutare l'INPS, per stipendi pubblici, ospedali, scuole ecc."
   - 🟡 **Assicurazione** = INAIL + fondo sanitario (#E5B800). Testo: "Protegge <Nome> se si fa male al lavoro o se deve curarsi."
   - 🟣 **TFR** (#A66BE8). Testo: "Soldi messi da parte per <Nome>: li riceve quando lascia il lavoro." In piccolo: "Trattamento di fine rapporto · consigliabile metterlo in un fondo pensione."
 - **Una scheda per ogni fetta**, con bordo colorato: titolo e percentuale (sotto lo 0,5% scrivi "meno dell'1%"), importo, frase. La pagina **finisce con la scheda del TFR**.
