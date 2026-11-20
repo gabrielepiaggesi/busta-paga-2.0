@@ -32,4 +32,4 @@ claude plugin update busta-paga-leggibile@gabriele-marketplace
 
 ## Avvertenze
 
-Il costo aziendale (di default circa il 40% in più del lordo) e lo scatto netto sono **stime**. Fa sempre fede la busta paga originale. Se hai le cifre reali dall'ufficio del personale, indicale e il plugin userà quelle.
+Il plugin chiede mensilità e RAL e, se Claude ha un browser, calcola costo aziendale e classifica dei redditi su [stipendee.it](https://www.stipendee.it); altrimenti stima il costo aziendale al 40% in più del lordo. Costo aziendale e scatto netto restano comunque **stime**. Fa sempre fede la busta paga originale. Se hai le cifre reali dall'ufficio del personale, indicale e il plugin userà quelle.
