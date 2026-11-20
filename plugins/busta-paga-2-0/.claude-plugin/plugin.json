@@ -1,8 +1,8 @@
 {
   "name": "busta-paga-2-0",
   "displayName": "Busta paga 2.0",
-  "version": "2.1.1",
-  "description": "Ricrea una busta paga italiana (PDF) in un PDF più leggibile e di design, partendo dal costo aziendale, con una pagina a torta spiegata per un bambino di 8 anni.",
+  "version": "2.2.0",
+  "description": "Ricrea una busta paga italiana (PDF) in un PDF più leggibile e di design, partendo dal costo aziendale, con una pagina a torta spiegata per un bambino di 8 anni. Crea anche una versione condivisibile con gli importi oscurati.",
   "author": {
     "name": "Gabriele Piaggesi"
   },
