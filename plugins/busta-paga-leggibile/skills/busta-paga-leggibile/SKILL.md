@@ -3,7 +3,7 @@ name: busta-paga-leggibile
 description: Ricrea una busta paga italiana (PDF) in un PDF più leggibile e di design, partendo dal costo aziendale, con una pagina a torta spiegata per un bambino di 8 anni.
 ---
 
-# Busta paga leggibile
+# Busta paga 2.0
 
 Prendi una busta paga italiana (Zucchetti, TeamSystem, Inaz, ecc.) e produci un PDF A4 di **2 pagine**:
 1. **Pagina 1** – la busta paga riorganizzata, leggibile, che parte dal costo aziendale.
