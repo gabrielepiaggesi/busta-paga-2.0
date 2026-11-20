@@ -1,28 +1,25 @@
-# gabriele-marketplace
+# Busta paga 2.0
 
-Marketplace personale di plugin per Claude.
+Un plugin per Claude che trasforma la tua busta paga italiana (PDF) in un PDF di 2 pagine, chiaro e di design:
 
-## Plugin disponibili
+1. **La busta paga riorganizzata**, che parte da quanto costi davvero all'azienda (costo aziendale) e arriva al netto, con contributi, tasse, TFR, ferie e permessi spiegati in modo semplice, più la tua posizione rispetto ai lavoratori dipendenti italiani.
+2. **Una pagina per bambini**: un grafico a torta che spiega dove vanno i soldi dello stipendio.
 
-| Plugin | Cosa fa |
-|---|---|
-| `busta-paga-leggibile` | Ricrea una busta paga italiana (PDF) in un PDF leggibile e di design, partendo dal costo aziendale, con una pagina a torta spiegata per un bambino di 8 anni. |
+## Come si usa
 
-## Installazione (Claude Code)
+### Nell'app Claude (web o desktop)
+1. Apri **Personalizza → Plugin** (in inglese: *Customize → Plugins*).
+2. Clicca **Aggiungi → Aggiungi marketplace** (*Add → Add marketplace*) e incolla: `https://github.com/gabrielepiaggesi/busta-paga-leggibile-claude`
+3. Installa **Busta paga 2.0**.
+4. In una nuova chat allega la tua busta paga in PDF e scrivi: *"Rendimi leggibile questa busta paga"*.
 
+### In Claude Code
 ```bash
 claude plugin marketplace add gabrielepiaggesi/busta-paga-leggibile-claude
 claude plugin install busta-paga-leggibile@gabriele-marketplace
 ```
 
-Oppure, dentro una sessione:
-
-```
-/plugin marketplace add gabrielepiaggesi/busta-paga-leggibile-claude
-/plugin install busta-paga-leggibile@gabriele-marketplace
-```
-
-Poi basta allegare la busta paga in PDF e chiedere: "rendimi leggibile questa busta paga".
+Claude ti chiederà **in quante mensilità** ricevi la RAL (12, 13 o 14) e **a quanto ammonta la tua RAL** (ed eventualmente regione e comune). Poi ti restituisce il PDF.
 
 ## Aggiornamenti
 
@@ -32,4 +29,4 @@ claude plugin update busta-paga-leggibile@gabriele-marketplace
 
 ## Avvertenze
 
-Il plugin chiede sempre mensilità e RAL (e regione e comune se non li trova in busta paga) e, se Claude ha un browser, prende da [stipendee.it](https://www.stipendee.it) solo il costo aziendale e la classifica dei redditi; tutto il resto viene dalla busta paga. Senza browser stima il costo aziendale al 40% in più del lordo. Costo aziendale e scatto netto restano comunque **stime**. Fa sempre fede la busta paga originale. Se hai le cifre reali dall'ufficio del personale, indicale e il plugin userà quelle.
+Il plugin chiede sempre mensilità e RAL (e regione e comune se non li trova in busta paga) e, se Claude ha un browser, prende da [stipendee.it](https://www.stipendee.it) solo il costo aziendale e la classifica dei redditi; tutto il resto viene dalla busta paga. Senza browser stima il costo aziendale al 40% in più del lordo. Costo aziendale e scatto netto restano comunque **stime**. Fa sempre fede la busta paga originale. Non è una consulenza fiscale o finanziaria.
