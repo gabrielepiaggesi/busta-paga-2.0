@@ -5,6 +5,8 @@ Un plugin per Claude che trasforma la tua busta paga italiana (PDF) in un PDF di
 1. **La busta paga riorganizzata**, che parte da quanto costi davvero all'azienda (costo aziendale) e arriva al netto, con contributi, tasse, TFR, ferie e permessi spiegati in modo semplice, più la tua posizione rispetto ai lavoratori dipendenti italiani.
 2. **Una pagina per bambini**: un grafico a torta che spiega dove vanno i soldi dello stipendio.
 
+Ogni volta crea **due PDF**: uno completo e uno **condivisibile**, identico ma con tutti gli importi in euro coperti da rettangolini neri, da mostrare ad altri senza rivelare quanto guadagni.
+
 ## Come si usa
 
 ### Nell'app Claude (web o desktop)
